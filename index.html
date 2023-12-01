@@ -1,9 +1,9 @@
-<!--
-     Author: Build Rise Shine with Nyros (BRS)
+ <!--
+     Author: Build Rise Shine with Nyros (BRS) 
      Created: 2023
-     Library / Component: HTML5 Canvas
-     Description: Main page  for the app
-     (c) Copyright by BRS with Nyros.
+     Library / Component: Whack' a rabbit'
+     Description: Main page for the app
+     (c) Copyright by BRS with Nyros. 
 -->
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML5 Canvas | Javascript</title>
+    <title>Whack' a rabbit'</title>
     <link rel="icon" href="http://203.193.173.125/buildriseshine/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/canvas.css" />
+    <link rel="stylesheet" href="assets/css/mole.css" />
   </head>
   <body>
     <header>
@@ -39,9 +39,9 @@
             </div>
             <div class="d-flex ps-3 align-items-center">
               <div class="flex-grow-1">
-                <h4>HTML5 Canvas</h4>
-                <p class="pb-0 mb-3 text-start">Purpose: Click and drag the mouse to draw in your own creative way.</p>
-                <p class="pb-0 mt-0 text-start"><a href="https://github.com/brs-studio/js-basics/tree/main/html-canvas" target="_blank" >Git Repository </a></p>
+                <h4>Whack' a rabbit'</h4>
+                <p class="pb-0 mb-3 text-start">Purpose: Fun time again!. Score by hitting the rabbit out of its hole.</p>
+                <p class="pb-0 mt-0 text-start"><a href="https://github.com/brs-studio/js-basics/tree/main/whack'%20a%20rabbit'" target="_blank" >Git Repository</a></p>
               </div>
             </div>
           </div>
@@ -49,8 +49,33 @@
       </div>
     </header>
 
-    <main role="main" class="container mx-auto">
-      <canvas id="draw" class="mb-5"></canvas>
+    <main role="main" class="container" style="margin-bottom: 100px;">
+      <h5 class="text-center mb-4 score fw-bolder">Score 0</h5>
+      <h5 id="timer" class="text-center mb-4 timer fw-bolder"></h5>
+      <div class="text-center mb-2">
+        <button id="gameStartBtn" class="btn btn-primary"  onClick="startGame()">Start!</button>
+      </div>
+    
+      <div class="game">
+        <div class="hole hole1">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+          <div class="mole"></div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer footer-dark">

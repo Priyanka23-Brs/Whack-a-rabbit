@@ -1,6 +1,6 @@
-# HTML 5 Canvas
+ # Whack a mole
 
 ###### Purpose:
-    When the mouse pointer is moved, it paints the background with some random color
+   Whack a mole game using JS
 
-#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/html-canvas/).
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/whack-a-mole/).
